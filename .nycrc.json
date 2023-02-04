@@ -1,0 +1,17 @@
+{
+  "require": ["tsconfig-paths/register"],
+  "extends": "./nyc-config.js",
+  "cwd": ".",
+  "all": true,
+  "reporter": [
+    "lcovonly",
+    "json",
+    "html"
+  ],
+  "temp-dir" : "coverage/.nyc_output",
+  "include": ["**/*.{ts,tsx}"],
+  "exclude": [
+    "jest.config.ts",
+    "specs/*"
+  ]
+}

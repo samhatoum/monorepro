@@ -1,0 +1,19 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es2020", "dom"],
+    "target": "es6",
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "types": ["node", "jest"],
+    "paths": {
+      "@fluffy/*": ["fluffy/*/src"]
+    }
+  },
+  "include": [
+    "fluffy/dog/src"
+  ]
+}
