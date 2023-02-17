@@ -3,7 +3,7 @@ const {compilerOptions} = require('./tsconfig.json');
 const nycConfig = require('./.nycrc.json');
 
 module.exports = {
-  coverageProvider: 'v8',
+  coverageProvider: 'babel',
   collectCoverageFrom: nycConfig.include,
   coveragePathIgnorePatterns: nycConfig.exclude,
   coverageReporters: nycConfig.reporter,
